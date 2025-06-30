@@ -1,0 +1,26 @@
+[theme]
+primaryColor = "#4CAF50"
+
+[server]
+runOnSave = true
+
+[client]
+showSidebarNavigation = false
+
+[ui]
+hideTopBar = false
+
+[pages]
+order = [
+  "pages/code_generator.py",
+  "pages/upload_and_classify.py",
+  "pages/test_generator.py",
+  "pages/bug_fixer.py",
+  "pages/code_summarizer.py",
+  "pages/chat_assistant.py",
+  "pages/feedback.py",
+  "pages/login.py",
+  "pages/signup.py",
+  "pages/reset_password.py",
+  "pages/forgot_password.py"
+]
