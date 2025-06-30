@@ -47,59 +47,6 @@ Smart SDLC is a next-generation AI-powered software development framework that i
 - *Jenkins (optional)* – Deployment jobs
 - *Jira API* – Task sync and ticket analysis
 
-
-## 🧬 Project Structure
-smart-sdlc/
-├── app/                             # 🔁 Backend application logic
-│   ├── main.py                      # FastAPI entry point
-│   ├── config.py                    # Environment and API configuration
-│   ├── routes/                      # API routes for frontend-backend communication
-│   ├── agents/                      # AI agents (RequirementAgent, TestAgent, etc.)
-│   │   ├── _init_.py
-│   │   ├── requirement_agent.py
-│   │   ├── test_agent.py
-│   │   ├── code_agent.py
-│   │   └── deployment_agent.py
-│   ├── models/                      # ML models and pre-processing pipelines
-│   │   ├── effort_estimator.py
-│   │   ├── test_generator.py
-│   │   └── bug_predictor.py
-│   ├── services/                    # External integration logic (GitHub, Jira, etc.)
-│   │   ├── github_service.py
-│   │   ├── jira_service.py
-│   │   └── vector_store_service.py
-│   ├── pipelines/                   # CI/CD automation pipelines
-│   │   ├── code_analysis.py
-│   │   └── test_runner.py
-│   ├── utils/                       # Utility functions, prompt builders, etc.
-│   │   ├── prompt_templates.py
-│   │   ├── text_cleaning.py
-│   │   └── logger.py
-│   └── data/                        # Embeddings, datasets, input examples
-│       ├── embeddings/
-│       ├── user_stories/
-│       └── metrics/
-│
-├── dashboard/                       # 🌐 React frontend for dashboards
-│   ├── public/
-│   ├── pages/
-│   ├── components/
-│   ├── assets/                      # Images, icons, SVGs
-│   └── utils/                       # Fetch functions, config
-│
-├── tests/                           # ✅ Unit and integration tests
-│   ├── test_agents.py
-│   ├── test_api.py
-│   └── test_models.py
-│
-├── scripts/                         # 🛠 Deployment, seeding, DB init scripts
-│   ├── init_db.py
-│   ├── generate_mock_data.py
-│   └── start_local.sh
-│
-├── .github/                         # 🔧 GitHub
-
-
 ## Installation & Setup
 
 Smart SDLC is designed to run as a full-stack application with:
@@ -122,7 +69,7 @@ Git	Latest	git-scm.com
 Docker	(Optional)	docker.com
 OpenAI API Key	Required	platform.openai.com
 
-🧠 Backend Setup (FastAPI)
+# 🧠 Backend Setup (FastAPI)
 
 1. Clone the repository:
 git clone https://github.com/your-username/smart-sdlc.git
@@ -146,7 +93,7 @@ uvicorn app.main:app --reload
 
 > 🟢 API available at: http://127.0.0.1:8000/docs (FastAPI Swagger UI)
 
-🌐 Frontend Setup (React Dashboard)
+# 🌐 Frontend Setup (React Dashboard)
 
 1. Navigate to the dashboard directory:
 cd dashboard
@@ -169,131 +116,4 @@ npm run dev
 
 Smart SDLC combines the traditional Software Development Life Cycle with AI automation. Each phase is handled by a dedicated AI agent that performs intelligent tasks to save time, reduce manual effort, and improve quality.
 
-🔄 Workflow Overview
-
-[ User Input ] 
-     ↓
-[ Requirement Agent (GPT-4) ]
-     ↓
-[ Design + Estimation Modules ]
-     ↓
-[ AI Code Generation ]
-     ↓
-[ Test Agent for Automated Testing ]
-     ↓
-[ CI/CD Pipeline + Deployment Agent ]
-     ↓
-[ Monitoring + Feedback Loop ]
-
-📍 Step-by-Step Working
-
-## 1️⃣ Requirement Phase
-
-User submits a user story or high-level feature idea.
-
-RequirementAgent uses GPT-4 to:
-
-Extract functional & non-functional requirements
-
-Generate acceptance criteria
-
-Suggest use cases
-
-✅ Output: Structured table with all requirement components.
-
-## 2️⃣ Design & Planning Phase
-
-DesignAgent suggests:
-
-Architecture pattern (e.g., MVC, microservices)
-
-Data flow diagrams
-
-Technology stack
-
-EstimationAgent uses ML (XGBoost) to:
-
-Predict effort, timeline, and cost.
-
-✅ Output: Technical design + Effort estimate report
-
-## 3️⃣ Development Phase
-
-CodeAgent (LLM-powered) auto-generates:
-
-Boilerplate code
-
-API endpoints
-
-CRUD operations based on schema
-
-✅ Output: Auto-generated starter code
-
-## 4️⃣ Testing Phase
-
-TestAgent produces:
-
-Unit tests
-
-Integration tests
-
-Edge-case test coverage
-
-Uses static analysis to:
-
-Identify missing tests
-
-Flag risky functions
-
-✅ Output: Executable test cases + test report
-
-## 5️⃣ Deployment Phase
-
-Code pushed to GitHub triggers:
-
-GitHub Actions (CI/CD pipeline)
-
-Linting + testing + build + deploy
-
-DeploymentAgent analyzes:
-
-Code readiness
-
-Release risk
-
-Change impact
-
-✅ Output: Release log, version info, risk level
-
-## 6️⃣ Maintenance & Monitoring Phase
-
-AI scans logs, issues, user feedback.
-
-Detects:
-
-Performance degradation
-
-Frequent failure areas
-
-Bug prediction from commit history
-
-✅ Output: Maintenance suggestions + patch recommendations
-
-## 7️⃣ Feedback Loop
-
-User corrections and feedback are stored (optionally).
-
-Used to:
-
-Improve future outputs
-
-Retrain ML models
-
-Refine prompts via reinforcement learning
-
-✅ Output: Continually improving AI performance
-
-🧠 Core Logic Behind the Scenes
-
-Agent/Module	Technology Used
 
