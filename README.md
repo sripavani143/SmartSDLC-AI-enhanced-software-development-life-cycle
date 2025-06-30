@@ -112,12 +112,12 @@ npm run dev
 2. Navigate to http://localhost:8052/docs — backend API interface.
 3. Upload a sample user story and let the AI generate SDLC elements!
 
-🛠 How Smart SDLC Works
+# 🛠 How Smart SDLC Works
 
 Smart SDLC combines the traditional Software Development Life Cycle with AI automation. Each phase is handled by a dedicated AI agent that performs intelligent tasks to save time, reduce manual effort, and improve quality.
 
   
-#📌 1. Requirement Analysis
+# 📌 1. Requirement Analysis
 
 User Input: Business analyst or user uploads the requirement or user story.
 
@@ -125,19 +125,19 @@ AI Processing:NLP models classify and extract key features from the user story.A
 
 Outcome: Structured requirements stored in system tables for future steps.
 
-#📌 2. Planning
+# 📌 2. Planning
 
 AI Assistance:Generates a task plan (timeline, milestones) based on requirements.Suggests technology stack and design architecture.
 
 Outcome: Project plan with resource estimation and scheduling.
 
-#📌 3. Design
+# 📌 3. Design
 
 Generated Outputs:AI suggests system architecture (microservices, monolith, etc.).Auto-generates UI wireframes or layout templates.Produces ER diagrams and flowcharts based on inputs.
 
 Outcome: Visual design blueprints and technical design documents.
 
-#📌 4. Development
+# 📌 4. Development
 
 Smart Code Generator:Converts structured requirements into working code snippets using AI models.Supports generation of frontend/backend logic and database schema.
 
@@ -149,19 +149,19 @@ AI Testing Engine:Auto-generates test cases and test data.Executes unit and inte
 
 Outcome: Bug reports, test results, and improved code quality.
 
-#📌 6. Deployment
+# 📌 6. Deployment
 
 DevOps Integration:Uses CI/CD pipelines for automated builds and deployments.AI monitors for deployment issues and rollback needs.
 
 Outcome: Fast and reliable deployment to staging or production.
 
-#📌 7. Maintenance & Feedback
+# 📌 7. Maintenance & Feedback
 
 Smart Monitoring:Tracks performance and user feedback using AI-driven analytics.Suggests optimizations or bug fixes proactively.
 
 Outcome: Continuous improvement cycle.
 
-#💡 Key AI-Driven Features
+# 💡 Key AI-Driven Features
 
 NLP for requirement understanding
 
