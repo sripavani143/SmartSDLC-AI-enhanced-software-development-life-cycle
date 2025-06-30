@@ -1,0 +1,42 @@
+[
+    {
+        "task": "write a program to print even numbers within a range between 1 to 100",
+        "code": "for i in range(1, 101):\n    if i % 2 == 0:\n        print(i)",
+        "explanation": ""
+    },
+    {
+        "task": "write a c program to print even numbers within a range between 1 to 100",
+        "code": "#include <stdio.h>\n\nint main() {\n    for (int i = 2; i <= 100; i += 2) {\n        printf(\"%d\\n\", i);\n    }\n    return 0;\n}",
+        "explanation": ""
+    },
+    {
+        "task": "write a cpp program to print even numbers within a range between 1 to 100",
+        "code": "for i in range(1, 101):\n    if i % 2 == 0:\n        print(i)",
+        "explanation": ""
+    },
+    {
+        "task": "write a cpp program to print even numbers between 1 to 100",
+        "code": "#include <iostream>\n\nint main() {\n    for (int i = 2; i <= 100; i += 2) {\n        std::cout << i << std::endl;\n    }\n    return 0;\n}",
+        "explanation": ""
+    },
+    {
+        "task": "write a python program to print the prime numbers within a range of 100",
+        "code": "def print_primes(start, end):\n    for num in range(start, end + 1):\n        if num > 1:\n            for i in range(2, num):\n                if (num % i) == 0:\n                    break\n            else:\n                print(num)\n\nprint_primes(1, 100)",
+        "explanation": ""
+    },
+    {
+        "task": "write a program to check whether the given number is prime or not",
+        "code": "def is_prime(n):\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\nnumber = int(input(\"Enter a number: \"))\nif is_prime(number):\n    print(f\"{number} is a prime number.\")\nelse:\n    print(f\"{number} is not a prime number.\")",
+        "explanation": ""
+    },
+    {
+        "task": "Write a Python program to calculate the factorial of a number using recursion. ",
+        "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nn = int(input(\"Enter a number: \"))\nprint(\"The factorial of\", n, \"is\", factorial(n))",
+        "explanation": ""
+    },
+    {
+        "task": "write a c program to happy numbers within a range",
+        "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint is_happy(int n) {\n    int slow, fast, temp;\n    slow = n;\n    fast = n;\n    while (1) {\n        slow = fast;\n        fast = 0;\n        while (slow > 0) {\n            fast = fast * 10 + (slow % 10);\n            slow = slow / 10;\n        }\n        if (fast == 1 || fast == 89)\n            return 1;\n        if (fast == n)\n            return 0;\n    }\n    return is_happy(fast);\n}\n\nint main() {\n    int start, end, num;\n    printf(\"Enter the starting range: \");\n    scanf(\"%d\", &start);\n    printf(\"Enter the ending range: \");\n    scanf(\"%d\", &end);\n    printf(\"Happy numbers between %d and %d are:\\n\", start, end);\n    for (num = start; num <= end; num++) {\n        if (is_happy(num))\n            printf(\"%d \", num);\n    }\n    printf(\"\\n\");\n    return 0;\n}",
+        "explanation": ""
+    }
+]
